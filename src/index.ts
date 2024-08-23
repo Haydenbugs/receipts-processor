@@ -15,5 +15,6 @@ app.use(express.json());
 app.use('/receipts', router);
 
 app.listen(port, () => {
+    // eslint-disable-next-line no-console
     console.log(`Server is running at http://localhost:${port}`);
 });

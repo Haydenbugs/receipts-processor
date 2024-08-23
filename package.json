@@ -8,7 +8,8 @@
     "build": "tsc",
     "dev": "ts-node-dev src/index.ts",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint 'src/**/*.{ts,tsx}'"
   },
   "keywords": [],
   "author": "",
@@ -21,14 +22,22 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.9.0",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
     "@types/node": "^22.4.2",
     "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
   }
 }
